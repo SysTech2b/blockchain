@@ -1,5 +1,6 @@
 class Block{
 
+    // Konstruktor + Parameter
     constructor(timestamp,lastHash,hash,data){
 
         this.timestamp = timestamp; // Zeitstempel
@@ -10,6 +11,14 @@ class Block{
 
         this.data = data; // Daten
 
+        toString(){ // für Debugging-Zwecke
+            return `Block -
+            Timestamp:  ${this.timestamp}
+            Last Hash:  ${this.lastHash}
+            Hash:       ${this.hash}
+            Data:       ${this.data}`
+        }
+
     }
-    
+
 }
